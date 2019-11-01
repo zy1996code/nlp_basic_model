@@ -13,8 +13,8 @@ def load_data():
     例如加载到数据集中 review 列的第 2 个数据为：
     review[1]为 One of the most frightening game experiences ever that will make you keep the lights on next to your bed. Great storyline with a romantic, horrific, and ironic plot. Fans of the original Resident Evil will be in for a surprise of a returning character! Not to mention that the voice-acting have drastically improved over the previous of the series. Don't miss out on the best of the series.
     '''
-    train_data = pd.read_csv('input/train.csv')
-    test_data = pd.read_csv('input/test.csv')
+    train_data = pd.read_csv('data_IMDB/train.csv')
+    test_data = pd.read_csv('data_IMDB/test.csv')
     reviews = train_data['review'].get_values()
     labels = train_data["sentiment"].get_values()
     # input_test = test_data['review'].get_values()
